@@ -165,9 +165,11 @@ with st.sidebar:
 
 📊 CGPA: 7.72
 
-💻 10+ Projects
+💻 12+ Projects
 
-🚀 ML Developer
+ 🛠   20+ Skills                   
+
+🚀 Aspiring ML Engineer
 """)
 
     st.markdown("---")
@@ -242,9 +244,9 @@ Currently pursuing B.Tech in Artificial Intelligence & Machine Learning while de
 
     a, b, c, d = st.columns(4)
 
-    a.metric("🚀 Projects", "10+")
-    b.metric("🌐 Deployments", "5+")
-    c.metric("🛠 Skills", "15+")
+    a.metric("🚀 Projects", "12+")
+    b.metric("🌐 Deployments", "8+")
+    c.metric("🛠 Skills", "20+")
     d.metric("🎓 Current Semester", "7th")
 
     st.markdown("---")
@@ -409,6 +411,8 @@ elif selected == "Skills":
     c2.info("🎯 Classification")
     c3.info("🧠 NLP")
     c4.info("📋 EDA")
+    c4.info("🎤 Speech Recognition")
+
 
     # Data Science
 
@@ -448,6 +452,7 @@ elif selected == "Skills":
     c3.info("☁️ Colab")
     c4.info("🏆 Kaggle")
     c5.info("💻 GitHub")
+    c5.info("🚀 API Integration")
 
     # Professional Skills
 
@@ -526,6 +531,10 @@ elif selected == "Projects":
         """)
 
       
+        st.link_button(
+            "🔗 Video Demo ",
+            "https://www.linkedin.com/posts/ajay-kumar-63a3b7326_machinelearning-nlp-python-ugcPost-7471138958580596736-CFyz/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFJI8c4BMD6QxMXLZAivbxdHOFLdWxEtOqU"
+        )
         st.link_button(
             "💻 GitHub",
             "https://github.com/Ajaykumar-02/movie-recommendation-system"
@@ -618,6 +627,214 @@ elif selected == "Projects":
         st.link_button(
             "💻 GitHub",
             "https://github.com/Ajaykumar-02/Heart_Disease_Prediction_System"
+        )
+
+    st.divider()
+        # Robo
+
+    col1, col2 = st.columns([1, 2])
+
+    with col1:
+
+        if os.path.exists("assets/robospeaker.png"):
+            st.image("assets/robospeaker.png")
+
+    with col2:
+
+        st.subheader("RoboSpeaker")
+
+        st.write("""
+         Multilingual Text-to-Speech converter
+        using Python, gTTS and Streamlit.
+        """)
+
+        st.link_button(
+            "🔗 Live Link",
+            "https://robospeaker-ajay.streamlit.app/"
+        )
+
+        st.link_button(
+            "💻 GitHub",
+            "https://github.com/Ajaykumar-02/RoboSpeaker"
+        )
+
+    st.divider()
+        # Jarvis
+
+    col1, col2 = st.columns([1, 2])
+
+    with col1:
+
+        if os.path.exists("assets/jarvis.png"):
+            st.image("assets/jarvis.png")
+
+    with col2:
+
+        st.subheader("Jarvis AI Assistant")
+
+        st.write("""
+        Voice-controlled AI assistant built using
+        Python, Speech Recognition, Pyttsx3,
+        PyWhatKit 
+        """)
+
+        st.link_button(
+            "🔗 Video Demo",
+            "https://drive.google.com/file/d/1mY-sR-r-zraAmedkvUTYCBwTv03SiolQ/view?usp=sharing"
+        )
+
+        st.link_button(
+            "💻 GitHub",
+            "https://github.com/Ajaykumar-02/Jarvis-AI-Assistant"
+        )
+
+    st.divider()
+        # Smart Image Optimizer
+
+    col1, col2 = st.columns([1, 2])
+
+    with col1:
+
+        if os.path.exists("assets/resizer.png"):
+            st.image("assets/resizer.png")
+
+    with col2:
+
+        st.subheader("Smart Image Optimizer")
+
+        st.write("""
+        Resize and optimize images with custom
+        dimensions and quality settings using
+        OpenCV and Streamlit. 
+        """)
+
+        st.link_button(
+            "🔗 Live Link ",
+            "https://imageresizer-jdttnslk66jpkaahxmjtmb.streamlit.app/"
+        )
+
+        st.link_button(
+            "💻 GitHub",
+            "https://github.com/Ajaykumar-02/ImageResizer"
+        )
+
+    st.divider()
+        # Snake Water Gun Game
+
+    col1, col2 = st.columns([1, 2])
+
+    with col1:
+
+        if os.path.exists("assets/snakewatergun.png"):
+            st.image("assets/snakewatergun.png")
+
+    with col2:
+
+        st.subheader("Snake Water Gun Game")
+
+        st.write("""
+        Interactive Snake Water Gun game built
+        using Python and Streamlit with score
+        tracking and game logic. 
+        """)
+
+        st.link_button(
+            "🔗 Live Link ",
+            "https://snakewatergun-ajay.streamlit.app/"
+        )
+
+        st.link_button(
+            "💻 GitHub",
+            "https://github.com/Ajaykumar-02/SnakeWaterGun"
+        )
+
+    st.divider()
+        #Guess The Number Game
+
+    col1, col2 = st.columns([1, 2])
+
+    with col1:
+
+        if os.path.exists("assets/guess.png"):
+            st.image("assets/guess.png")
+
+    with col2:
+
+        st.subheader("Guess The Number Game")
+
+        st.write("""
+         Number guessing game with difficulty
+        levels, high score tracking and
+        interactive Streamlit UI. 
+        """)
+
+        st.link_button(
+            "🔗 Live Link ",
+            "https://numberguesser-ajay.streamlit.app/"
+        )
+
+        st.link_button(
+            "💻 GitHub",
+            "https://github.com/Ajaykumar-02/NumberGuesser"
+        )
+
+    st.divider()
+        # Calculator Using tkinter
+
+    col1, col2 = st.columns([1, 2])
+
+    with col1:
+
+        if os.path.exists("assets/Calculator.png"):
+            st.image("assets/Calculator.png")
+
+    with col2:
+
+        st.subheader("Calculator Using tkinter")
+
+        st.write("""
+        Graphical User Interface (GUI) calculator
+        built using Python's Tkinter library. 
+        It performs arithmetic operations. 
+        """)
+
+        st.link_button(
+            "🔗 Video Demo  ",
+            "https://drive.google.com/file/d/1UA8gkoPLqmBg8tbWXdlWLGunYK0CfOwY/view?usp=sharing"
+        )
+
+        st.link_button(
+            "💻 GitHub",
+            "https://github.com/Ajaykumar-02/Pyhton-Projects/blob/main/Calculator.py"
+        )
+
+    st.divider()
+        #Travel India Website
+
+    col1, col2 = st.columns([1, 2])
+
+    with col1:
+
+        if os.path.exists("assets/travel.png"):
+            st.image("assets/travel.png")
+
+    with col2:
+
+        st.subheader("Travel India Website")
+
+        st.write("""
+        A responsive website for exploring travel 
+        destinations and tour packages across India. 
+        """)
+
+        st.link_button(
+            "🔗 Video Demo  ",
+            "https://drive.google.com/file/d/1-4EGcbnxKwiW2LgHW_WSkpV84kEDAaTA/view?usp=sharing"
+        )
+
+        st.link_button(
+            "💻 GitHub",
+            "https://github.com/Ajaykumar-02/Travel-India-Website"
         )
 
     st.divider()
