@@ -165,7 +165,7 @@ with st.sidebar:
 
 📊 CGPA: 7.72
 
-💻 12+ Projects
+💻 13+ Projects
 
  🛠   20+ Skills                   
 
@@ -244,8 +244,8 @@ Currently pursuing B.Tech in Artificial Intelligence & Machine Learning while de
 
     a, b, c, d = st.columns(4)
 
-    a.metric("🚀 Projects", "12+")
-    b.metric("🌐 Deployments", "8+")
+    a.metric("🚀 Projects", "13+")
+    b.metric("🌐 Deployments", "9+")
     c.metric("🛠 Skills", "20+")
     d.metric("🎓 Current Semester", "7th")
 
@@ -411,7 +411,7 @@ elif selected == "Skills":
     c2.info("🎯 Classification")
     c3.info("🧠 NLP")
     c4.info("📋 EDA")
-    c4.info("🎤 Speech Recognition")
+    c1.info("🎤 Speech Recognition")
 
 
     # Data Science
@@ -452,7 +452,7 @@ elif selected == "Skills":
     c3.info("☁️ Colab")
     c4.info("🏆 Kaggle")
     c5.info("💻 GitHub")
-    c5.info("🚀 API Integration")
+    c1.info("🚀 API Integration")
 
     # Professional Skills
 
@@ -538,6 +538,36 @@ elif selected == "Projects":
         st.link_button(
             "💻 GitHub",
             "https://github.com/Ajaykumar-02/movie-recommendation-system"
+        )
+
+
+    st.divider()
+    # Movie Recommendation
+
+    col1, col2 = st.columns([1, 2])
+
+    with col1:
+
+        if os.path.exists("assets/Email.png"):
+            st.image("assets/Email.png")
+
+    with col2:
+
+        st.subheader("Email Spam Detection System")
+
+        st.write("""
+        Content-based recommendation system
+        using TF-IDF and Cosine Similarity.
+        """)
+
+      
+        st.link_button(
+            "🔗 Live Link ",
+            "https://email-spam-detection-system-ak.streamlit.app/"
+        )
+        st.link_button(
+            "💻 GitHub",
+            "https://github.com/Ajaykumar-02/Email-Spam-Detection-System"
         )
 
 
